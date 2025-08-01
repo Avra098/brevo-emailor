@@ -42,5 +42,7 @@ app.post('/webhook', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Webhook listener running at http://localhost:${PORT}/webhook`);
+  console.log(` Webhook listener running at http://localhost:${PORT}/webhook`);
 });
+
+module.exports = { startWebhookServer };
